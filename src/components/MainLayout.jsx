@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router";
 export default function MainLayout() {
   return (
     <div>
-      <nav className="m l left">
+      <nav className="m l left surface-container">
         <Link to="/">
           <i>home</i>
           <span>Home</span>
@@ -23,13 +23,13 @@ export default function MainLayout() {
         </Link>
       </nav>
 
-      <header className="fixed responsive max grey3 black-text">
+      <header className="fixed responsive max surface-container-low">
         <nav className="right-align">
           <button className="transparent circle">
-            <i>palette</i>
+            <i>dark_mode</i>
           </button>
           <button className="transparent circle">
-            <i>database</i>
+            <i>help</i>
           </button>
         </nav>
       </header>

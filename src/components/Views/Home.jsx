@@ -1,12 +1,22 @@
+import { useEffect, useState } from "react";
+
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setLoaded(true), 100);
+  }, []);
+
   return (
     <div>
-      <div className="container responsive center-align grey3">
+      <div className="center-align surface-container-low">
         <div className="page-header">
           <div className="padding">
-            <div className="hero-shot">
-              <img src="https://picsum.photos/300/300" />
-            </div>
+            <img
+              className={`hero-shot ${loaded ? "slide-in" : ""}`}
+              src="src/assets/pfp.jpg"
+              alt="profile"
+            />
             <div className="large-space"></div>
             <div className="small-height center-align">
               <h6>Charlie Yarbrough</h6>
@@ -19,24 +29,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="responsive center-align">
+      <div className="center-align">
         <div className="page-body">
           <div className="medium-space"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-            voluptatum nihil enim tenetur blanditiis officiis iusto tempore
-            consequuntur impedit odio accusamus dolore illum animi, quam
-            consequatur fuga fugiat repellendus cum. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Vel quas neque vitae illum
-            perspiciatis architecto harum explicabo quod. Earum atque minima
-            reiciendis? Aperiam est fugit ea obcaecati culpa alias asperiores.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-            quisquam accusamus dicta fuga cum expedita neque laborum odio
-            consequuntur similique? Vero veniam ipsa ad sint illum nesciunt
-            voluptatibus tempore id. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dicta provident alias iure harum sapiente debitis
-            laboriosam aliquid animi nam! Architecto id officia harum hic nihil
-            nobis tempore sapiente libero iste?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            facilis praesentium distinctio nobis, labore quam fuga voluptas
+            totam molestias omnis sint nulla dolorem accusantium consequatur quo
+            a reprehenderit quia molestiae! Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Reiciendis, nobis, quasi consequuntur
+            sapiente expedita distinctio cupiditate tempore eum porro similique
+            saepe modi molestias ipsa ducimus earum velit! Doloremque,
+            exercitationem harum! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Quibusdam excepturi quisquam explicabo sequi
+            dolores molestiae officia vel? A consequuntur, sunt excepturi dicta,
+            minus ratione assumenda accusamus rem doloremque facilis labore?
           </p>
         </div>
       </div>

@@ -3,7 +3,17 @@
 }
 
 .hero-shot {
-  border-radius: 500px;
+  border-radius: 100%;
+  object-fit: cover;
+  width: 30%;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.6s ease;
+}
+
+.hero-shot.slide-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .page-header {

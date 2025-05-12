@@ -5,7 +5,7 @@ import Demo from "./components/Views/Demo";
 import Contact from "./components/Views/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import "beercss";
+
 
 function App() {
   return (
