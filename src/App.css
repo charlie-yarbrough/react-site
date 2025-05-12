@@ -1,0 +1,17 @@
+.main-content {
+  padding: 0px !important;
+}
+
+.hero-shot {
+  border-radius: 500px;
+}
+
+.page-header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.page-body {
+  max-width: 80%;
+  margin: 0 auto;
+}
