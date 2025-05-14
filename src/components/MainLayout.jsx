@@ -1,6 +1,12 @@
 import { Outlet, Link } from "react-router";
 
 export default function MainLayout() {
+  function toggleTheme() {
+    const current = ui("mode");
+    const next = current === "dark" ? "light" : "dark";
+    ui("mode", next);
+  }
+
   return (
     <div>
       <nav className="m l left surface-container">
@@ -15,7 +21,7 @@ export default function MainLayout() {
         </Link>
         <Link to="/demo">
           <i>folder</i>
-          <span>Demo</span>
+          <span>Projects</span>
         </Link>
         <Link to="/contact">
           <i>mail</i>
@@ -25,7 +31,7 @@ export default function MainLayout() {
 
       <header className="fixed responsive max surface-container-low">
         <nav className="right-align">
-          <button className="transparent circle">
+          <button className="transparent circle" onClick={toggleTheme}>
             <i>dark_mode</i>
           </button>
           <button className="transparent circle">

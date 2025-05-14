@@ -20,7 +20,7 @@ export default function Home() {
             <div className="large-space"></div>
             <div className="small-height center-align">
               <h6>Charlie Yarbrough</h6>
-              <h3>Data Analyst</h3>
+              <h3 className="bold">Data Analyst</h3>
               <div className="medium-space"></div>
               <button className="border small">Learn more</button>
               <button className="border small">My Work</button>
